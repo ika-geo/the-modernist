@@ -1,0 +1,94 @@
+.latestWork{
+    background-color: #660000;
+    padding-bottom: 30px;
+}
+
+
+.latestWork__title{
+    position: relative;
+}
+
+
+.latestWork__title__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 auto 33px auto;
+    font-size: 32px;
+    font-family: "Georgia";
+    color: rgb(255, 255, 255);
+    background-color: rgb(48, 48, 48);
+    width: 285px;
+    height: 51px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+
+.latestWork__title__hr{
+    background-color: rgb(48, 48, 48);
+    position: absolute;
+    top: 50%;
+    border: none;
+    width: 100%;
+    height: 3px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+
+/*works*/
+
+
+
+.latestWork__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 901px){
+    .latestWork__list{
+        justify-content: space-evenly;
+    }
+
+}
+
+
+.latestWork__list__item {
+    position: relative;
+    box-sizing: border-box;
+    border: 2px solid white;
+    margin-bottom: 30px;
+    opacity: 0.85;
+    transition-duration: 0.2s;
+}
+
+
+.latestWork__list__item:hover{
+    border: 2px solid #76c38f;
+    opacity: 1;
+}
+
+.latestWork__list__item:hover .latestWork__list__title{
+    display: none;
+}
+
+.latestWork__list__title{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 2px 0;
+    transition-duration: 0.2s;
+    font-size: 14px;
+    font-family: "Georgia";
+    color: rgb(255, 255, 255);
+}
+
